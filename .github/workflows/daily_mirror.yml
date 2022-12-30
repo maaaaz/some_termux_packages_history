@@ -1,8 +1,8 @@
 name: Daily mirroring
 
-on: [push]
-  #schedule:
-    # - cron:  '10 03 * * *'
+on: 
+  schedule:
+     - cron:  '10 03 * * *'
 
 permissions:
   contents: write
