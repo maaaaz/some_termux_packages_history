@@ -18,7 +18,7 @@ jobs:
     - name: Download packages
       run: |
         cd $GITHUB_WORKSPACE
-        wget --no-verbose --cut-dirs=1 -nH -np -e robots=off -l 1 --mirror --accept '.deb' -i "./test_termux_pkg_save.txt"
+        wget --no-verbose --cut-dirs=1 -nH -np -e robots=off -l 1 --mirror --accept '.deb' -i "./packages_to_archive.txt"
         
     - name: Push them to repository
       run: |
