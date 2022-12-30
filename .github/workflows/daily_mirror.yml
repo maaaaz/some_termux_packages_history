@@ -1,0 +1,30 @@
+name: Daily mirroring
+
+on: [push]
+  #schedule:
+    # - cron:  '10 03 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Download packages
+      run: |
+        cd $GITHUB_WORKSPACE
+        wget --no-verbose --cut-dirs=1 -nH -np -e robots=off -l 1 --mirror --accept '.deb' -i "./test_termux_pkg_save.txt"
+        
+    - name: Push them to repository
+      run: |
+        git config user.name mirroring-bot
+        git config user.email github-actions@github.com
+        git pull
+        git add -A
+        git commit -m "mirror bot - $(date '+%Y/%m/%d')"
+        git push
