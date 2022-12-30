@@ -15,12 +15,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Download packages
+    - name: Download packages to archive
       run: |
         cd $GITHUB_WORKSPACE
         wget --no-verbose --cut-dirs=1 -nH -np -e robots=off -l 1 --mirror --accept '.deb' -i "./packages_to_archive.txt"
         
-    - name: Push them to repository
+    - name: Push them to this repository
       run: |
         git config user.name mirroring-bot
         git config user.email github-actions@github.com
