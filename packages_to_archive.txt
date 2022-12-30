@@ -10,7 +10,6 @@ https://packages.termux.dev/apt/termux-main/pool/main/d/dnsutils-static/
 https://packages.termux.dev/apt/termux-main/pool/main/d/dos2unix/
 https://packages.termux.dev/apt/termux-main/pool/main/f/findutils/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git/
-https://packages.termux.dev/apt/termux-main/pool/main/g/git/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git-crypt/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git-crypt/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git-delta/
