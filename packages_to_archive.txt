@@ -10,10 +10,6 @@ https://packages.termux.dev/apt/termux-main/pool/main/d/dnsutils-static/
 https://packages.termux.dev/apt/termux-main/pool/main/d/dos2unix/
 https://packages.termux.dev/apt/termux-main/pool/main/f/findutils/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git/
-<<<<<<< HEAD
-=======
-https://packages.termux.dev/apt/termux-main/pool/main/g/git-crypt/
->>>>>>> ec3f2d442d1b2f42479ea05e71f40b947a7b3066
 https://packages.termux.dev/apt/termux-main/pool/main/g/git-crypt/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git-delta/
 https://packages.termux.dev/apt/termux-main/pool/main/g/gitea/
