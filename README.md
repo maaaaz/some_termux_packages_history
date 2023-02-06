@@ -1,5 +1,5 @@
-Mirror of some Termux packages
-==============================
+Archive of old versions of some Termux packages
+===============================================
 
 Description
 -----------
