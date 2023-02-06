@@ -27,6 +27,7 @@ https://packages.termux.dev/apt/termux-main/pool/main/h/htop/
 https://packages.termux.dev/apt/termux-main/pool/main/j/jq/
 https://packages.termux.dev/apt/termux-main/pool/main/j/jql/
 https://packages.termux.dev/apt/termux-main/pool/main/j/jq-static/
+https://packages.termux.dev/apt/termux-main/pool/main/k/krb5/
 https://packages.termux.dev/apt/termux-main/pool/main/l/less/
 https://packages.termux.dev/apt/termux-main/pool/main/l/lesspipe/
 https://packages.termux.dev/apt/termux-main/pool/main/l/lsof/
