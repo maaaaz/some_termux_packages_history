@@ -9,6 +9,9 @@ https://packages.termux.dev/apt/termux-main/pool/main/d/dnsutils/
 https://packages.termux.dev/apt/termux-main/pool/main/d/dnsutils-static/
 https://packages.termux.dev/apt/termux-main/pool/main/d/dos2unix/
 https://packages.termux.dev/apt/termux-main/pool/main/f/findutils/
+https://packages.termux.dev/apt/termux-root/pool/stable/f/frida/
+https://packages.termux.dev/apt/termux-root/pool/stable/f/frida-dev/
+https://packages.termux.dev/apt/termux-root/pool/stable/f/frida-python/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git-crypt/
 https://packages.termux.dev/apt/termux-main/pool/main/g/git-delta/
@@ -24,6 +27,8 @@ https://packages.termux.dev/apt/termux-main/pool/main/g/gitui/
 https://packages.termux.dev/apt/termux-main/pool/main/g/grep/
 https://packages.termux.dev/apt/termux-main/pool/main/g/gzip/
 https://packages.termux.dev/apt/termux-main/pool/main/h/htop/
+https://packages.termux.dev/apt/termux-root/pool/stable/i/iptables/
+https://packages.termux.dev/apt/termux-root/pool/stable/i/iptables-static/
 https://packages.termux.dev/apt/termux-main/pool/main/j/jq/
 https://packages.termux.dev/apt/termux-main/pool/main/j/jql/
 https://packages.termux.dev/apt/termux-main/pool/main/j/jq-static/
@@ -53,11 +58,15 @@ https://packages.termux.dev/apt/termux-main/pool/main/p/perl-rename/
 https://packages.termux.dev/apt/termux-main/pool/main/p/pigz/
 https://packages.termux.dev/apt/termux-main/pool/main/p/psmisc/
 https://packages.termux.dev/apt/termux-main/pool/main/p/pv/
+https://packages.termux.dev/apt/termux-main/pool/main/p/python/
 https://packages.termux.dev/apt/termux-x11/pool/main/q/qbittorrent/
 https://packages.termux.dev/apt/termux-x11/pool/main/q/qbittorrent-nox/
 https://packages.termux.dev/apt/termux-x11/pool/main/q/qemu-system-arm/
+https://packages.termux.dev/apt/termux-main/pool/main/r/rclone/
 https://packages.termux.dev/apt/termux-main/pool/main/s/samba/
 https://packages.termux.dev/apt/termux-main/pool/main/s/sed/
+https://packages.termux.dev/apt/termux-main/pool/main/s/socat/
+https://packages.termux.dev/apt/termux-main/pool/main/s/sqlite/
 https://packages.termux.dev/apt/termux-main/pool/main/s/strace/
 https://packages.termux.dev/apt/termux-main/pool/main/s/subversion/
 https://packages.termux.dev/apt/termux-main/pool/main/s/subversion-perl/
@@ -77,6 +86,10 @@ https://packages.termux.dev/apt/termux-main/pool/main/w/wget2/
 https://packages.termux.dev/apt/termux-main/pool/main/w/wget2-static/
 https://packages.termux.dev/apt/termux-main/pool/main/w/wgetpaste/
 https://packages.termux.dev/apt/termux-main/pool/main/w/whois/
+https://packages.termux.dev/apt/termux-main/pool/main/w/wireguard-tools/
+https://packages.termux.dev/apt/termux-root/pool/stable/w/wireless-tools/
+https://packages.termux.dev/apt/termux-root/pool/stable/w/wireless-tools-static/
+https://packages.termux.dev/apt/termux-root/pool/stable/w/wpa-supplicant/
 https://packages.termux.dev/apt/termux-main/pool/main/x/xz-utils/
 https://packages.termux.dev/apt/termux-main/pool/main/z/zip/
 https://packages.termux.dev/apt/termux-main/pool/main/z/zipios/
