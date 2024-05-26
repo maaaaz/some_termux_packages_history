@@ -53,6 +53,9 @@ https://packages.termux.dev/apt/termux-main/pool/main/p/perl-rename/
 https://packages.termux.dev/apt/termux-main/pool/main/p/pigz/
 https://packages.termux.dev/apt/termux-main/pool/main/p/psmisc/
 https://packages.termux.dev/apt/termux-main/pool/main/p/pv/
+https://packages.termux.dev/apt/termux-x11/pool/main/q/qbittorrent/
+https://packages.termux.dev/apt/termux-x11/pool/main/q/qbittorrent-nox/
+https://packages.termux.dev/apt/termux-x11/pool/main/q/qemu-system-arm/
 https://packages.termux.dev/apt/termux-main/pool/main/s/samba/
 https://packages.termux.dev/apt/termux-main/pool/main/s/sed/
 https://packages.termux.dev/apt/termux-main/pool/main/s/strace/
