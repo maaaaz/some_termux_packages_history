@@ -79,8 +79,6 @@ https://packages.termux.dev/apt/termux-main/pool/main/u/util-linux/
 https://packages.termux.dev/apt/termux-main/pool/main/u/util-linux-static/
 https://packages.termux.dev/apt/termux-main/pool/main/v/vbindiff/
 https://packages.termux.dev/apt/termux-main/pool/main/v/vim/
-https://packages.termux.dev/apt/termux-main/pool/main/v/vim-python/
-https://packages.termux.dev/apt/termux-main/pool/main/v/vim-runtime/
 https://packages.termux.dev/apt/termux-main/pool/main/w/wget/
 https://packages.termux.dev/apt/termux-main/pool/main/w/wget2/
 https://packages.termux.dev/apt/termux-main/pool/main/w/wget2-static/
