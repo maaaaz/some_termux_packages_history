@@ -17,11 +17,15 @@ jobs:
       
     - name: Clone repo
       run: |
-        cd /tmp/
+        cd /mnt/
         git clone --progress --depth=1 "https://github.com/maaaaz/some_termux_packages_history.git" 
-
     
     - name: Move folders
       run: |
-        cd /tmp/
+        cd /mnt/
+        mkdir dest
         
+        cd /mnt/some_termux_packages_history/termux-main/pool/main/
+        find . -type d -links 2 -exec mv "{}" "/mnt/dest" \;
+
+        ls -alh /mnt/dest/
