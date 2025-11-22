@@ -1,0 +1,26 @@
+name: Upload to archive.org
+
+on: 
+  workflow_dispatch
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install dependencies 
+      run: |
+        APT_PARAMS='sudo apt -y -qq -o=Dpkg::Use-Pty=0'
+        $APT_PARAMS update && $APT_PARAMS install -y fd-find
+
+        pip install termuxpackagearchiver
+        ia configure --username ${{ secrets.SECRET_ARCHIVE_LOGIN }} --password ${{ secrets.SECRET_ARCHIVE_PASSWORD }}
+      
+    - name: Clone repo
+      run: |
+        cd /tmp/
+        git clone --depth=1 "https://github.com/maaaaz/some_termux_packages_history.git" 
+
+    
+    - name: Move folders
+      run: |
+        cd /tmp/
+        
