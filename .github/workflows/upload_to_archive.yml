@@ -26,6 +26,7 @@ jobs:
         sudo mkdir dest
         
         cd /mnt/some_termux_packages_history/termux-main/pool/main/
-        sudo find . -type d -links 2 -exec mv "{}" "/mnt/dest" \;
+        #sudo find . -type d -links 2 -exec mv "{}" "/mnt/dest" \;
+        sudo fdfind -t d --min-depth=2 --max-depth=2 -x mv "{}" "/mnt/dest"
 
         sudo ls -alh /mnt/dest/
