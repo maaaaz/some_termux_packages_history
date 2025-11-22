@@ -18,7 +18,7 @@ jobs:
     - name: Clone repo
       run: |
         cd /mnt/
-        sudo git clone --progress --depth=1 "https://github.com/maaaaz/some_termux_packages_history.git" 
+        sudo git clone --depth=1 "https://github.com/maaaaz/some_termux_packages_history.git" 
     
     - name: Move folders
       run: |
