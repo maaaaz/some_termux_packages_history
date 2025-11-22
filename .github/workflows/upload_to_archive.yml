@@ -2,6 +2,7 @@ name: Upload to archive.org
 
 on: 
   workflow_dispatch
+
 jobs:
   upload:
     runs-on: ubuntu-latest
@@ -17,7 +18,7 @@ jobs:
     - name: Clone repo
       run: |
         cd /tmp/
-        git clone --depth=1 "https://github.com/maaaaz/some_termux_packages_history.git" 
+        git clone --progress --depth=1 "https://github.com/maaaaz/some_termux_packages_history.git" 
 
     
     - name: Move folders
