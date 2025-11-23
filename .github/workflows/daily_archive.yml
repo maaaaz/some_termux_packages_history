@@ -1,0 +1,45 @@
+name: Daily archive to archive.org
+
+on: 
+  workflow_dispatch
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install dependencies 
+      run: |
+        APT_PARAMS='sudo apt -y -qq -o=Dpkg::Use-Pty=0'
+        $APT_PARAMS update && $APT_PARAMS install -y fd-find
+
+        sudo pip install termuxpackagearchiver
+        sudo termuxpackagearchiver -h
+        sudo ia configure --username ${{ secrets.SECRET_ARCHIVE_LOGIN }} --password ${{ secrets.SECRET_ARCHIVE_PASSWORD }}
+
+      
+    - name: Clone repo the last day of commits
+      run: |
+        cd /tmp/
+        git clone --shallow-since="$(date --date="yesterday" '+%Y-%m-%d')" "https://github.com/termux/termux-packages.git" "termux-packages"
+        
+        cd "termux-packages"
+        git -P log  --pretty=format:"%s" > /tmp/commits_to_parse
+        
+    
+    - name: Parse and download packages
+      run: |
+        cd /tmp/        
+        sudo mkdir dest
+        termuxpackagearchiver -a parse_commits -i "/tmp/commits_to_parse" -o "/tmp/dest"
+     
+    - name: List folders to upload
+      run: |
+        cd /tmp/
+        du -sh /tmp/dest/
+        du -sh /tmp/dest/*        
+        ls -alh /tmp/dest/
+
+    - name: Upload to archive.org
+      run: |
+        cd /tmp/
+        termuxpackagearchiver -d "/mnt/dest/"
