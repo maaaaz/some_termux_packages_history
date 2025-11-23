@@ -9,13 +9,12 @@ jobs:
     steps:
     - name: Install dependencies 
       run: |
-        APT_PARAMS='sudo apt -y -qq -o=Dpkg::Use-Pty=0'
-        $APT_PARAMS update && $APT_PARAMS install -y fd-find
+        #APT_PARAMS='sudo apt -y -qq -o=Dpkg::Use-Pty=0'
+        #$APT_PARAMS update && $APT_PARAMS install -y fd-find
 
-        sudo pip install termuxpackagearchiver
-        sudo termuxpackagearchiver -h
-        sudo ia configure --username ${{ secrets.SECRET_ARCHIVE_LOGIN }} --password ${{ secrets.SECRET_ARCHIVE_PASSWORD }}
-
+        pip install termuxpackagearchiver
+        termuxpackagearchiver -h
+        ia configure --username ${{ secrets.SECRET_ARCHIVE_LOGIN }} --password ${{ secrets.SECRET_ARCHIVE_PASSWORD }}
       
     - name: Clone repo the last day of commits
       run: |
@@ -42,4 +41,4 @@ jobs:
     - name: Upload to archive.org
       run: |
         cd /tmp/
-        termuxpackagearchiver -d "/mnt/dest/"
+        termuxpackagearchiver -a upload -d "/mnt/dest/"
