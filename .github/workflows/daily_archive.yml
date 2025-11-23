@@ -1,7 +1,9 @@
 name: Daily archive to archive.org
 
 on: 
-  workflow_dispatch
+  #workflow_dispatch
+  schedule:
+   - cron:  '10 3 * * *'
 
 jobs:
   upload:
