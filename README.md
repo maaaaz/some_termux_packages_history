@@ -9,6 +9,7 @@ Thanks to this project, termux packages are automatically backed up here [`https
 * The `bmon` package is backed up in `https://archive.org/details/termux_pkgs_archive_b`
 * And the `libcap` package is backed up in `https://archive.org/details/termux_pkgs_archive_libc`
 
+A list of all items on `archive.org` is available [here](https://archive.org/details/@archivetermux/lists/1/archive-of-termux-published-packages?sort=title).
 
 Copyright and license
 ---------------------
