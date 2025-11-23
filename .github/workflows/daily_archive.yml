@@ -23,7 +23,8 @@ jobs:
         
         cd "termux-packages"
         git -P log  --pretty=format:"%s" > /tmp/commits_to_parse
-        
+
+        cat "/tmp/commits_to_parse"
     
     - name: Parse and download packages
       run: |
