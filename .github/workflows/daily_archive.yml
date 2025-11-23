@@ -42,4 +42,4 @@ jobs:
     - name: Upload to archive.org
       run: |
         cd /tmp/
-        termuxpackagearchiver -a upload -d "/mnt/dest/"
+        termuxpackagearchiver -a upload -d "/tmp/dest/"
