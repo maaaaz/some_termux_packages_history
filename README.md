@@ -9,8 +9,6 @@ Thanks to this project, Termux packages are each day automatically backed up her
 * The `bmon` package is backed up in `https://archive.org/details/termux_pkgs_archive_b`
 * And the `libcap` package is backed up in `https://archive.org/details/termux_pkgs_archive_libc`
 
-A list of all packages bins on `archive.org` is available [here](https://archive.org/details/@archivetermux/lists/1/archive-of-termux-published-packages?sort=title).
-
 Copyright and license
 ---------------------
 * All trademarks, service marks, trade names and product names appearing on this repository are the property of their respective owners 
